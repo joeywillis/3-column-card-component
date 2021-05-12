@@ -37,6 +37,10 @@ a {
     background-color: white;
 }
 
+footer {
+    margin-bottom: 50px;
+}
+
 .icon{
     margin: 48px 0 35px 49px;
 }

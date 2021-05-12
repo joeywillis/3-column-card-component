@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*font-family: 'Big Shoulders Display', cursive;*/
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0 0 0 49px;
+}
+
+p {
+    margin: 25px 48px;
+    line-height: 25px;
+    opacity: .75;
+}
+
+a {
+    border-style: none;
+    background-color: white;
+}
+
+.icon{
+    margin: 48px 0 35px 49px;
+}
+
+.card {
+    display: grid;
+    margin: 88px 24px;
+    grid-template-rows: repeat(3, minmax(442px, 1fr));
+    max-width: 450px;
+
+}
+
+.sedan,
+.suv,
+.luxury,
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.sedan,
+.suv,
+.luxury {
+    flex-direction: column;
+}
+
+.btn {
+    height: 48px;
+    width: 146px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 0 48px 48px;
+    align-items: center;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan-btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid white;
+}
+
+.suv-btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid white;
+}
+
+.luxury-btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(184, 100%, 22%);
+}
+.attribution a {
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+
+@media (min-width: 790px) {
+    .card {
+        max-width: 920px;
+        max-height: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 88px 0 48px 48px;
+    }
+}

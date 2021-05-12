@@ -78,6 +78,7 @@ footer {
 
 .sedan {
     background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
 }
 
 .suv {
@@ -86,6 +87,7 @@ footer {
 
 .luxury {
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
 }
 
 .sedan-btn {
@@ -137,6 +139,14 @@ footer {
         grid-template-rows: 1fr;
         align-items: center;
         justify-content: center;
+    }
+
+    .sedan {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        border-radius: 0 8px 8px 0;
     }
 
     .btn {
